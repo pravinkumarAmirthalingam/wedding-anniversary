@@ -1821,19 +1821,22 @@ a:hover {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  gap: 2%;
   width: 100%;
   max-width: 900px;
 }
 
 .mandapam-tower {
-  width: clamp(100px, 20vw, 220px);
+  width: 25%;
+  max-width: 220px;
   height: auto !important;
   mix-blend-mode: multiply;
   opacity: 0.9;
 }
 
 .mandapam-center {
-  width: clamp(200px, 40vw, 400px);
+  width: 45%;
+  max-width: 400px;
   position: relative;
 }
 
