@@ -1260,16 +1260,16 @@ a:hover {
     0 0 0 4px var(--gold-dark),
     inset 0 0 20px rgba(26, 18, 9, 0.5),
     0 20px 50px rgba(26, 18, 9, 0.3);
-  background: #000;
+  background: transparent;
   overflow: hidden;
   z-index: 3;
 }
 
 .parents-photo {
   width: 100%;
+  height: auto;
   display: block;
-  object-fit: cover;
-  aspect-ratio: 3/4;
+  object-fit: contain;
   opacity: 0.95;
   transition: transform 0.5s ease;
 }
