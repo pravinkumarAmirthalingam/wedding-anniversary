@@ -70,27 +70,27 @@ milestones: [
   /* ── புகைப்படத் தொகுப்பு ─────────────────────────────────── */
   galleryHeading: "இது தொடங்கிய இடம்",
   galleryImages: [
-    { src: "images/wedding1.jpg", caption: "திருமண நாள்" },
-    { src: "images/wedding2.jpg", caption: "இனிய தம்பதி" },
-    { src: "images/wedding3.jpg", caption: "புனித சபதம்" },
-    { src: "images/wedding4.jpg", caption: "குடும்பமும் மகிழ்ச்சியும்" },
-    { src: "images/wedding5.jpg", caption: "இணைந்த நடை" },
-    { src: "images/wedding6.jpg", caption: "பொன்னான நினைவுகள்" }
+    { src: "images/wedding1.webp", caption: "திருமண நாள்" },
+    { src: "images/wedding2.webp", caption: "இனிய தம்பதி" },
+    { src: "images/wedding3.webp", caption: "புனித சபதம்" },
+    { src: "images/wedding4.webp", caption: "குடும்பமும் மகிழ்ச்சியும்" },
+    { src: "images/wedding5.webp", caption: "இணைந்த நடை" },
+    { src: "images/wedding6.webp", caption: "பொன்னான நினைவுகள்" }
   ],
 
   /* ── குடும்பப் புகைப்படங்கள் (பேஸ் 11) ──────────────────── */
   familyPhotosHeading: "நினைவுத் தொகுப்பு",
   familyPhotos: [
-    { src: "images/photo1.jpg" },
-    { src: "images/photo2.jpg" },
-    { src: "images/photo3.jpg" },
-    { src: "images/photo4.jpg" },
-    { src: "images/photo5.jpg" },
-    { src: "images/photo6.jpeg" },
-    { src: "images/photo7.jpg" },
-    { src: "images/photo8.jpg" },
-    { src: "images/photo9.jpg" },
-    { src: "images/photo10.jpg" }
+    { src: "images/photo1.webp" },
+    { src: "images/photo2.webp" },
+    { src: "images/photo3.webp" },
+    { src: "images/photo4.webp" },
+    { src: "images/photo5.webp" },
+    { src: "images/photo6.webp" },
+    { src: "images/photo7.webp" },
+    { src: "images/photo8.webp" },
+    { src: "images/photo9.webp" },
+    { src: "images/photo10.webp" }
   ],
 
   /* ── நிறைவு / சமர்ப்பணம் ─────────────────────────────────── */
@@ -104,24 +104,24 @@ milestones: [
 
   /* ── படப் பாதைகள் ────────────────────────────────────────── */
   images: {
-    heroBg:      "images/hero-bg.jpg",
-    parentsMain: "images/parents-main.jpg",
-    wedding1:    "images/wedding1.jpg",
-    wedding2:    "images/wedding2.jpg",
-    wedding3:    "images/wedding3.jpg",
-    wedding4:    "images/wedding4.jpg",
-    wedding5:    "images/wedding5.jpg",
-    wedding6:    "images/wedding6.jpg",
-    photo1:      "images/photo1.jpg",
-    photo2:      "images/photo2.jpg",
-    photo3:      "images/photo3.jpg",
-    photo4:      "images/photo4.jpg",
-    photo5:      "images/photo5.jpg",
-    photo6:      "images/photo6.jpg",
-    photo7:      "images/photo7.jpg",
-    photo8:      "images/photo8.jpg",
-    photo9:      "images/photo9.jpg",
-    photo10:     "images/photo10.jpg"
+    heroBg:      "images/hero-bg.webp",
+    parentsMain: "images/parents-main.web",
+    wedding1:    "images/wedding1.webp",
+    wedding2:    "images/wedding2.webp",
+    wedding3:    "images/wedding3.webp",
+    wedding4:    "images/wedding4.webp",
+    wedding5:    "images/wedding5.webp",
+    wedding6:    "images/wedding6.webp",
+    photo1:      "images/photo1.webp",
+    photo2:      "images/photo2.webp",
+    photo3:      "images/photo3.webp",
+    photo4:      "images/photo4.webp",
+    photo5:      "images/photo5.webp",
+    photo6:      "images/photo6.webp",
+    photo7:      "images/photo7.webp",
+    photo8:      "images/photo8.webp",
+    photo9:      "images/photo9.webp",
+    photo10:     "images/photo10.webp"
   },
 
   /* ── SVG வரைகலைப் பாதைகள் ───────────────────────────────── */
