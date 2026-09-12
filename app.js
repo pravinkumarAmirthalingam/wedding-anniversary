@@ -482,7 +482,7 @@
       if (gGrid) {
         gGrid.innerHTML = CONTENT.galleryImages.map(img => `
           <div class="gallery-item reveal-child">
-            <img src="${img.src}" alt="${img.caption}" class="gallery-item-img" />
+            <img src="${img.src}" alt="${img.caption}" class="gallery-item-img" loading="lazy" />
             <div class="gallery-item-caption">${img.caption}</div>
           </div>
         `).join('');
@@ -521,7 +521,7 @@
       if (polaroidCollage) {
         polaroidCollage.innerHTML = CONTENT.familyPhotos.map((img, i) => `
           <div class="polaroid polaroid-item">
-            <img src="${img.src}" alt="Family Photo ${i+1}" class="polaroid-img" />
+            <img src="${img.src}" alt="Family Photo ${i+1}" class="polaroid-img" loading="lazy" />
           </div>
         `).join('');
 
