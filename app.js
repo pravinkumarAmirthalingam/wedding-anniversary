@@ -668,6 +668,7 @@
         /* ── MUTE ── */
         fadeVolume(audio.volume, 0, FADE_DURATION, () => {
           audio.muted = true;
+          audio.pause(); // Pause to save resources
         });
 
         btn.classList.add('is-muted');
@@ -677,11 +678,30 @@
       isMuted = !isMuted;
     });
 
-    console.log('🎵 Audio controller initialised (muted autoplay)');
+    /* ── START ON FIRST INTERACTION ──
+       Browsers block autoplay when a user opens a link. 
+       This starts the music the moment they touch or click anywhere on the page! */
+    const startOnInteraction = (e) => {
+      // Don't trigger if they clicked the music button itself (it handles it)
+      if (e.target.closest('#music-toggle')) return;
+      
+      if (isMuted) {
+        btn.click(); // Programmatically click the button to unmute and play
+      }
+      
+      // Remove listeners so it only fires once
+      document.removeEventListener('click', startOnInteraction);
+      document.removeEventListener('touchstart', startOnInteraction);
+    };
+    
+    document.addEventListener('click', startOnInteraction);
+    document.addEventListener('touchstart', startOnInteraction, { passive: true });
+
+    console.log('🎵 Audio controller initialised (waiting for interaction)');
   }
 
-  // Init audio after DOM + assets ready
-  window.addEventListener('load', () => {
+  // Init audio immediately so the button works even before images finish loading
+  document.addEventListener('DOMContentLoaded', () => {
     setTimeout(initAudio, 200);
   });
 
