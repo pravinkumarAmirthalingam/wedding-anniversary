@@ -1282,6 +1282,7 @@ a:hover {
 .silhouette {
   position: absolute;
   bottom: 0;
+  height: auto !important;
   mix-blend-mode: multiply; /* Removes white bg on cream wrapper */
   opacity: 0.8;
   z-index: 2;
@@ -1577,6 +1578,7 @@ a:hover {
   position: relative;
   z-index: 2; /* Image goes above clouds */
   width: 100%;
+  height: auto !important;
   display: block;
   object-fit: contain;
   mix-blend-mode: multiply; /* Blends the light blue sky of the image with the background */
@@ -1825,6 +1827,7 @@ a:hover {
 
 .mandapam-tower {
   width: clamp(100px, 20vw, 220px);
+  height: auto !important;
   mix-blend-mode: multiply;
   opacity: 0.9;
 }
@@ -1836,6 +1839,7 @@ a:hover {
 
 .mandapam-arch {
   width: 100%;
+  height: auto !important;
   mix-blend-mode: multiply;
   display: block;
 }
@@ -2063,10 +2067,11 @@ a:hover {
 .closing-gopuram {
   position: absolute;
   bottom: 20px; /* nestled inside mountains */
-  width: clamp(120px, 25vw, 250px);
+  width: clamp(140px, 30vw, 240px);
+  height: auto !important;
   mix-blend-mode: multiply;
-  opacity: 0.8;
-  z-index: 3;
+  opacity: 0.9;
+  z-index: 1;
 }
 
 .closing-mountains {
