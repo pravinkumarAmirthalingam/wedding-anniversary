@@ -519,7 +519,10 @@
 
       const polaroidCollage = document.getElementById('polaroid-collage');
       if (polaroidCollage) {
-        polaroidCollage.innerHTML = CONTENT.familyPhotos.map((img, i) => `
+        // Duplicate the photos for a seamless infinite marquee
+        const marqueePhotos = [...CONTENT.familyPhotos, ...CONTENT.familyPhotos];
+        
+        polaroidCollage.innerHTML = marqueePhotos.map((img, i) => `
           <div class="polaroid polaroid-item">
             <img src="${img.src}" alt="Family Photo ${i+1}" class="polaroid-img" loading="lazy" />
           </div>
@@ -534,19 +537,23 @@
           rotation: () => gsap.utils.random(-10, 10)
         });
 
-        // Horizontal scroll animation
-        gsap.to(polaroidCollage, {
-          x: () => -(polaroidCollage.scrollWidth - window.innerWidth + 80),
-          ease: "none",
-          scrollTrigger: {
-            trigger: '#family-gallery',
-            pin: true,
-            scrub: 1,
-            start: "center center", // Pin when section center hits viewport center
-            end: () => "+=" + polaroidCollage.scrollWidth,
-            invalidateOnRefresh: true
-          }
-        });
+        // Calculate exact distance to scroll: half of total scroll width (since it's duplicated)
+        // We use a small timeout to let the DOM calculate widths properly after images start loading
+        setTimeout(() => {
+          const totalWidth = polaroidCollage.scrollWidth;
+          const halfWidth = totalWidth / 2;
+          
+          const marqueeTween = gsap.to(polaroidCollage, {
+            x: -halfWidth,
+            ease: "none",
+            duration: 20, // Adjust this to make it faster/slower
+            repeat: -1
+          });
+
+          // Pause on hover
+          polaroidCollage.addEventListener('mouseenter', () => marqueeTween.pause());
+          polaroidCollage.addEventListener('mouseleave', () => marqueeTween.play());
+        }, 100);
       }
     }
 

@@ -1890,7 +1890,7 @@ a:hover {
 .section--family-gallery {
   position: relative;
   background: var(--cream);
-  padding: 40px 20px 160px;
+  padding: 40px 20px 60px;
   overflow: hidden;
   text-align: center;
 }
@@ -1944,7 +1944,7 @@ a:hover {
   align-items: center;
   gap: 40px;
   margin-top: 60px;
-  padding: 40px 50vw; /* padding to center start/end items */
+  padding: 40px 0; /* padding removed to cut empty space */
   width: max-content;
 }
 
@@ -2264,12 +2264,12 @@ a:hover {
 
   /* ── Family Gallery ── */
   .section--family-gallery {
-    padding: 30px 16px 100px;
+    padding: 30px 16px 40px;
   }
 
   .polaroid-collage {
     gap: 24px;
-    padding: 30px 30vw;
+    padding: 30px 0;
   }
 
   .polaroid-img {
@@ -2519,12 +2519,12 @@ a:hover {
 
   /* ── Family Gallery ── */
   .section--family-gallery {
-    padding: 24px 12px 80px;
+    padding: 24px 12px 30px;
   }
 
   .polaroid-collage {
     gap: 20px;
-    padding: 24px 40vw;
+    padding: 24px 0;
   }
 
   .polaroid {
