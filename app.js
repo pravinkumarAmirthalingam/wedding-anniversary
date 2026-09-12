@@ -480,12 +480,13 @@
 
       const gGrid = document.getElementById('gallery-grid');
       if (gGrid) {
-        gGrid.innerHTML = CONTENT.galleryImages.map(img => `
+        const marqueeGallery = [...CONTENT.galleryImages, ...CONTENT.galleryImages];
+        gGrid.innerHTML = `<div class="gallery-marquee-inner">` + marqueeGallery.map(img => `
           <div class="gallery-item reveal-child">
             <img src="${img.src}" alt="${img.caption}" class="gallery-item-img" loading="lazy" />
             <div class="gallery-item-caption">${img.caption}</div>
           </div>
-        `).join('');
+        `).join('') + `</div>`;
       }
     }
 
