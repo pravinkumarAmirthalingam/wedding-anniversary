@@ -71,7 +71,7 @@ milestones: [
   galleryHeading: "இது தொடங்கிய இடம்",
   galleryImages: [
     { src: "images/wedding1.webp", caption: "திருமண நாள்" },
-    { src: "images/wedding2.webp", caption: "இனிய தம்பதி" },
+    { src: "images/wedding6.webp", caption: "இனிய தம்பதி" },
     { src: "images/wedding3.webp", caption: "புனித சபதம்" },
     { src: "images/wedding4.webp", caption: "குடும்பமும் மகிழ்ச்சியும்" },
     { src: "images/wedding5.webp", caption: "இணைந்த நடை" },
